@@ -27,10 +27,10 @@ Enemy.prototype.update = function(dt) {
     if(this.x >= 550) {
         this.x = -50;
     }
-// if player gets gets within 20 px of an enemy, reset game
+// if player gets gets within 50 px of an enemy, reset game
 
-    if (player.x >= this.x - 20 && player.x <= this.x +20){                          
-        if (player.y >= this.y - 20 && player.y <= this.y + 20){            
+    if (player.x >= this.x - 50 && player.x <= this.x + 50){                          
+        if (player.y >= this.y - 50 && player.y <= this.y + 50){            
             player.x = 200;
             player.y = 400;
         }
