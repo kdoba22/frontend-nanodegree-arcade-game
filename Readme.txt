@@ -5,3 +5,5 @@
 3.  Using the arrow keys move the little man safely from the grass across the stones to the water without out being hit by the enemy ladybugs.
 
 4.  Once on the water, the game resets.
+
+5.  Now that we know how to play, lets double click on the index.html file to begin play.
