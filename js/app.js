@@ -13,7 +13,7 @@ var Enemy = function(x, y) {
     //algorithm; it cannot be chosen or reset by the user.
     //
     this.speed = 100 + Math.floor(Math.random() * 200);
-}
+};
 
 // Update the enemy's position
 Enemy.prototype.update = function(dt) {
@@ -35,13 +35,12 @@ Enemy.prototype.update = function(dt) {
             player.y = 400;
         }
     }    
-}
+};
 
 // Draw the enemy on the screen, required method for game
 Enemy.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-}
-
+};
 // Player class,
 // This class requires an update(), render() and
 // a handleInput() method.
@@ -51,7 +50,7 @@ var Player = function() {
     this.x = 200;
     this.y = 400;
     this.speed = 100 + Math.floor(Math.random() * 200);
-}
+};
 
 
 Player.prototype.update = function(){
@@ -64,19 +63,19 @@ Player.prototype.update = function(){
 
   this.speed = 100 + Math.floor(Math.random() * 200);
   
-}
+};
 
 // Draw the Player on the screen, required method for game
 Player.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-}
+};
 
 // Reset player back to starting position
 Player.prototype.reset = function(){
     this.x = 200;
     this.y = 400;
     
-}
+};
 
 //Input handler for player
 Player.prototype.handleInput = function(e){
